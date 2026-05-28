@@ -78,6 +78,7 @@ model Team {
   mascot       String?
   conference   String
   division     Division
+  gender       Gender
   state        String
   city         String
   logoUrl      String?
@@ -321,4 +322,9 @@ enum CommitStatus {
   SIGNED
   DECOMMITTED
   ENROLLED
+}
+
+enum Gender {
+  MENS
+  WOMENS
 }
